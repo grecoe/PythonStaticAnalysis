@@ -1,0 +1,37 @@
+{
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "onFocusChange",
+    "python.linting.lintOnSave": true,
+    "editor.trimAutoWhitespace": true,
+    "python.linting.enabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "120"
+    ],
+    "python.linting.banditEnabled": true,
+    "python.linting.banditArgs": [
+        "-x",
+        "out/,packages/,pywin32/,scripts/,servicemock/,test/",
+        "-n",
+        "4",
+        "-s",
+        "B110,B314,B404,B405,B406,B322"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintArgs": [
+        "--rcfile",
+        "C:\\gitrepogrecoe\\PythonStaticAnalysis\\configuration\\.pylintrc"
+    ],
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--statistics",
+        "--ignore=E501",
+        "--config=C:\\gitrepogrecoe\\PythonStaticAnalysis\\configuration\\tox.ini"
+    ],
+    "python.linting.mypyEnabled": true,
+    "python.linting.mypyArgs": [
+        "--ignore-missing-imports",
+        "--no-strict-optional"
+    ]
+}
